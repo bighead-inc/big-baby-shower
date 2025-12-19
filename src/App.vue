@@ -1,43 +1,58 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { routes } from '@/router'
+
+const navLinks = routes.map(route => ({
+  to: route.path,
+  label: route.meta?.navLabel ?? route.name.charAt(0).toUpperCase() + route.name.slice(1),
+}))
+
+const linkStyle = { flexBasis: `${100 / navLinks.length}%` }
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div class="lg:flex lg:h-screen">
+    <!-- Left: Fixed image (desktop only) -->
+    <aside class="hidden lg:flex lg:flex-col lg:w-2/5 lg:fixed lg:left-0 lg:top-0 lg:h-screen overflow-hidden">
+      <div class="flex-1 min-h-0 overflow-hidden">
+        <img
+          class="w-full h-full object-cover"
+          alt="Baby Shower Photo"
+          src="@/assets/baby-photo.jpg"
+        />
+      </div>
+      <footer class="shrink-0 px-4 py-8 text-center">
+        <p class="text-xs text-gray-500">built with love by loren & hector</p>
+      </footer>
+    </aside>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+    <!-- Right: Nav + Content (scrollable) -->
+    <main class="main-content flex flex-col min-h-screen lg:w-3/5 lg:overflow-y-auto lg:h-screen lg:min-h-0">
+      <nav class="flex flex-row justify-center py-4">
+        <RouterLink
+          v-for="link in navLinks"
+          :key="link.to"
+          :to="link.to"
+          :style="linkStyle"
+          class="flex-auto text-center hover:text-slate-900"
+        >
+          {{ link.label }}
+        </RouterLink>
       </nav>
-    </div>
-  </header>
 
-  <RouterView />
+      <div class="container mx-auto px-4 py-8 flex-1">
+        <RouterView />
+      </div>
+
+      <!-- Mobile footer (hidden on desktop) -->
+      <footer class="lg:hidden px-4 py-8 text-center mt-auto">
+        <p class="text-xs text-gray-500">built with love by loren & hector</p>
+      </footer>
+    </main>
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
 nav a.router-link-exact-active {
   color: var(--color-text);
 }
@@ -46,40 +61,9 @@ nav a.router-link-exact-active:hover {
   background-color: transparent;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
 @media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+  .main-content {
+    margin-left: 40%;
   }
 }
 </style>
