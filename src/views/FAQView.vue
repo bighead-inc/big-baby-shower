@@ -41,6 +41,26 @@ import QAItem from '@/components/QAItem.vue'
     />
     <br>
     <QAItem
+      question="I am not up-to-date on vaccines, can I still come?"
+      answer="As long as you are not currently/potentially sick. We'll also have masks available."
+    />
+    <br>
+    <QAItem
+      question="I was defintely sick 2 weeks ago but have a lingering cough but not contagious, probably..."
+      answer="If it's been over 10 days since you first got sick then come but wear a mask throughout the baby shower and keep some distance just in case. Otherwise, we accept your presence and celebration from afar!"
+    />
+    <br>
+    <QAItem
+      question="I can't attend anymore. Do I tell you?"
+      answer="Yep, giving us a heads-up would be nice! Thanks for the courtesy!"
+    />
+    <br>
+    <QAItem
+      question="I didn't RSVP, you are still anticipating that I'm showing up right?"
+      answer="You are? News to me."
+    />
+    <br>
+    <QAItem
       question="Is there going to be a diaper raffle?"
       answer="Yep! Bring any size packs of diapers to enter!"
     />
