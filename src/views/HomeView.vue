@@ -16,17 +16,10 @@ const details = [
   },
   {
     header: 'Where',
-    description: '[VENUE NAME AND ADDRESS]',
-    link: '[GOOGLE MAPS LINK]'
+    description: 'Harwood Heights Village Hall',
+    link: 'https://maps.app.goo.gl/RJJLaQ4rFJGeGC4v6'
   },
 ]
-
-function downloadCalendarInvite() {
-  const link = document.createElement('a')
-  link.href = '/baby-shower.ics'
-  link.download = 'baby-shower.ics'
-  link.click()
-}
 </script>
 
 <template>
@@ -38,7 +31,7 @@ function downloadCalendarInvite() {
       src="@/assets/baby-shower.png"
     />
 
-    <!-- Event Details -->
+    <!-- English Event Details -->
     <section class="mb-8">
       <div class="info-item">
         <h1 class="accent text-2xl/10">Come and celebrate our tiny guest with us!</h1>
@@ -60,6 +53,32 @@ function downloadCalendarInvite() {
         <br>
         <p class="description pl-1">
           Thank you so much for helping us create a cozy and healthy space as we celebrate together.
+        </p>
+      </div>
+    </section>
+    <br>
+    <br>
+
+    <!-- Spanish Event Details -->
+    <section class="mb-8">
+      <div class="info-item">
+        <h1 class="accent text-2xl/10">¡Vengan a celebrar con nosotros a nuestro invitadito especial que viene en camino!</h1>
+        <p class="description pl-1">Hemos estado siendo muy juiciosos para mantenernos sanos, así que les agradeceríamos mucho su ayuda para que todo esté seguro para el bebé y para Loren Michelle.</p>
+
+        <br>
+
+        <p class="description pl-1">
+          Estas son unas cositas que significan mucho para nosotros:
+        </p>
+        <br>
+        <ul class="list-disc list-inside">
+          <li>Les recomendamos, si pueden, ponerse la vacuna de la gripa y la de COVID (nosotros estamos vacunados y al día). </li>
+          <li>Si se sienten medio enfermados —con tos, estornudos, o si ven que algo les está empezando— les pedimos con cariño que nos manden su amor desde la casa. </li>
+
+        </ul>
+        <br>
+        <p class="description pl-1">
+          Mil gracias por ayudarnos a crear un espacio bien bonito y saludable mientras celebramos juntos.
         </p>
       </div>
     </section>

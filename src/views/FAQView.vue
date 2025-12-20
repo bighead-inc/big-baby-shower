@@ -5,24 +5,59 @@ import QAItem from '@/components/QAItem.vue'
 <template>
   <div class="faq">
     <QAItem
-      question="What time should I arrive?"
-      answer="[ARRIVAL TIME]. Please try to arrive on time so we can start the festivities together!"
+      question="Is this coed?"
+      answer="Yep! We are inviting you and your partner! (We are only doing this once!)"
     />
+    <br>
     <QAItem
-      question="Can I bring my kids?"
-      answer="[KIDS POLICY - e.g., Yes, kids are welcome! / This is an adults-only event.]"
+      question="Can I bring my child?"
+      answer="As long as they are not coughing, sneezing, sniffling or sick in any way shape or form!
+      As a reminder, it's a municipal building acquired to us via connections so we do need to be respectful of the space. We will also not have child activities planned."
     />
-    <QAItem
-      question="What should I wear?"
-      answer="[DRESS CODE - e.g., Casual and comfortable! / Semi-formal attire.]"
-    />
+    <br>
     <QAItem
       question="Is there parking available?"
-      answer="[PARKING INFO - e.g., Street parking is available. / There is a parking lot at the venue.]"
+      answer="There is a parking lot!."
     />
+    <br>
     <QAItem
-      question="Do I need to bring a gift?"
-      answer="Your presence is the best present! But if you'd like to bring a gift, check out our registries on the Registry page."
+      question="Is there going to be a diaper raffle?"
+      answer="Yep! Bring any size packs of diapers to enter!"
+    />
+    <br>
+    <QAItem
+      question="Can I get you something off the registry?"
+      answer="Sure, we also accept money for daycare! Otherwise, please include a gift receipt because it's likely we already have the item or something similar."
+    />
+    <br>
+    <QAItem
+      question="Can I get you baby clothes?"
+      answer="No thanks!"
+    />
+    <br>
+    <QAItem
+      question="It's just allergies. I can still come, right?"
+      answer="We accept your presence and celebration from afar!"
+    />
+    <br>
+    <QAItem
+      question="Is there going to be a diaper raffle?"
+      answer="Yep! Bring any size packs of diapers to enter!"
+    />
+    <br>
+    <QAItem
+      question="Are you having a boy or a girl?"
+      answer="Come and find out."
+    />
+    <br>
+    <QAItem
+      question="What if I can’t attend but still want to send a gift?"
+      answer="Oh thank you! You can get us something from our registry that will be delivered to our home."
+    />
+    <br>
+    <QAItem
+      question="Unrelated to the baby shower, but I have some stuff you might use for baby. How do I coordinate that with you?"
+      answer="Just text us! We'll let you know if we could use those items!"
     />
   </div>
 </template>

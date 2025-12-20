@@ -2,18 +2,54 @@
   <div class="registry">
     <h1 class="accent text-3xl/10">Baby Registries</h1>
     <p class="pl-1 mb-4">
-      We've registered at a few places to help you find the perfect gift for our little one!
+      We’ve created registries at a few places to help make finding the perfect gift for our little one easy and joyful.
     </p>
-
+    <br>
+    <p class="pl-1 mb-4">
+      If you decide to gift something outside of the registry, we kindly ask that you include a gift receipt. We’ve been incredibly lucky to receive many pre-loved items in great condition from friends, so we may already have something similar.
+    </p><br>
+    <p class="pl-1 mb-4">
+      If you prefer, we’re more than happy to accept monetary gifts to help with daycare. We truly appreciate your generosity.
+    </p>
+    <br>
+    <p class="pl-1 mb-4">
+      And no clothes, please — we’re all set! Thanks!
+    </p>
+    <br>
     <ul class="pl-1 space-y-2">
       <li>
-        <a href="[AMAZON REGISTRY LINK]" target="_blank" rel="noopener" class="hover:text-slate-900 font-medium hover:underline">
+        <a href="https://www.amazon.com/baby-reg/loren-velasquez-hector-rios-march-2026-chicago/3BJD6C5Q07VHW?ref_=cm_sw_r_cp_ud_dp_9BNE5NW5YZG736CT792R" target="_blank" rel="noopener" class="hover:text-slate-900 font-medium hover:underline">
           Amazon Baby Registry
         </a>
       </li>
       <li>
-        <a href="[TARGET REGISTRY LINK]" target="_blank" rel="noopener" class="hover:text-slate-900 font-medium hover:underline">
-          Target Baby Registry
+        <a href="[BABYLIST REGISTRY LINK]" target="_blank" rel="noopener" class="hover:text-slate-900 font-medium hover:underline">
+          Babylist Registry
+        </a>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <p class="pl-1 mb-4">
+      Hemos creado listas de regalos en algunos lugares para que encontrar el regalo perfecto para bebé sea fácil y especial.
+    </p>
+    <br>
+    <p class="pl-1 mb-4">
+      Si deciden regalarnos algo fuera de la lista, por favor incluyan el recibo de regalo. Es posible que ya tengamos ese artículo (o algo similar), ya que muchos amigos han sido muy generosos y nos han regalado artículos pre-amados y en excelente estado.
+    </p>
+    <br>
+    <p class="pl-1 mb-4">
+      Si lo prefieren, con mucho gusto aceptamos aportes en dinero para ayudarnos con la guardería. Agradecemos enormemente su generosidad.
+    </p>
+    <br>
+    <p class="pl-1 mb-4">
+      Y por favor, nada de ropa — ¡ya tenemos suficiente, muchas gracias!
+    </p>
+    <br>
+    <ul class="pl-1 space-y-2">
+      <li>
+        <a href="https://www.amazon.com/baby-reg/loren-velasquez-hector-rios-march-2026-chicago/3BJD6C5Q07VHW?ref_=cm_sw_r_cp_ud_dp_9BNE5NW5YZG736CT792R" target="_blank" rel="noopener" class="hover:text-slate-900 font-medium hover:underline">
+          Amazon Baby Registry
         </a>
       </li>
       <li>
