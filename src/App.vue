@@ -18,7 +18,7 @@ const linkStyle = { flexBasis: `${100 / navLinks.length}%` }
         <img
           class="w-full h-full object-cover"
           alt="Baby Shower Photo"
-          src="@/assets/baby-photo.jpg"
+          src="@/assets/baby-shower.png"
         />
       </div>
       <footer class="shrink-0 px-4 py-8 text-center">

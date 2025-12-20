@@ -2,9 +2,18 @@
 import InfoItem from '@/components/InfoItem.vue'
 
 const details = [
-  { header: 'Who', description: '[PARENT NAMES] Baby Shower' },
-  { header: 'What', description: 'A celebration for the upcoming arrival!' },
-  { header: 'When', description: '[DATE AND TIME]' },
+  {
+    header: 'Come and celebrate our tiny guest with us!',
+    description: `We've been extra careful about staying healthy,
+    so we'd appreciate your help keeping things safe for baby and Loren.
+
+    A few things that would mean a lot to us:
+
+    - Getting the Flu and Covid vaccines (strongly encouraged)
+    - If you're feeling under the weather -- coughing, sneezing, indigestion or just sensing something coming on -- we kindly ask that you send us your love from home instead.
+
+    Thank you so much for helping us create a cozy and healthy space as we celebrate together.`
+  },
   {
     header: 'Where',
     description: '[VENUE NAME AND ADDRESS]',
@@ -26,7 +35,7 @@ function downloadCalendarInvite() {
     <img
       class="lg:hidden rounded mb-8 w-full"
       alt="Baby Shower Photo"
-      src="@/assets/baby-photo.jpg"
+      src="@/assets/baby-shower.png"
     />
 
     <!-- Event Details -->
