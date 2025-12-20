@@ -11,7 +11,7 @@ const linkStyle = { flexBasis: `${100 / navLinks.length}%` }
 </script>
 
 <template>
-  <div class="lg:flex lg:h-screen">
+  <div class="lg:flex lg:h-screen tracking-wide">
     <!-- Left: Fixed image (desktop only) -->
     <aside class="hidden lg:flex lg:flex-col lg:w-2/5 lg:fixed lg:left-0 lg:top-0 lg:h-screen overflow-hidden">
       <div class="flex-1 min-h-0 overflow-hidden">

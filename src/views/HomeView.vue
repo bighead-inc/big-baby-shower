@@ -40,24 +40,28 @@ function downloadCalendarInvite() {
 
     <!-- Event Details -->
     <section class="mb-8">
-      <InfoItem
-        v-for="item in details"
-        :header="item.header"
-        :description="item.description"
-        :link="item.link"
-        :key="item.header"
-      />
-    </section>
+      <div class="info-item">
+        <h1 class="accent text-2xl/10">Come and celebrate our tiny guest with us!</h1>
+        <p class="description pl-1">We've been extra careful about staying healthy, so we'd
+        appreciate your help keeping things safe for baby and Loren.</p>
 
-    <!-- Calendar Invite -->
-    <section class="mb-8">
-      <h1 class="accent text-2xl/10">Add to Calendar</h1>
-      <button
-        @click="downloadCalendarInvite"
-        class="pl-1 hover:text-slate-900 font-medium hover:underline cursor-pointer"
-      >
-        Download Calendar Invite (.ics)
-      </button>
+        <br>
+
+        <p class="description pl-1">
+          A few things that would mean a lot to us:
+        </p>
+        <br>
+        <ul class="list-disc list-inside">
+          <li>Getting the Flu and Covid vaccines (strongly encouraged)</li>
+          <li>If you're feeling under the weather -- coughing, sneezing, indigestion or just sensing
+          something coming on -- we kindly ask that you send us your love from home instead.</li>
+
+        </ul>
+        <br>
+        <p class="description pl-1">
+          Thank you so much for helping us create a cozy and healthy space as we celebrate together.
+        </p>
+      </div>
     </section>
   </div>
 </template>
