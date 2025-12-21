@@ -39,6 +39,12 @@ const { language } = useLanguage()
         <p class="description pl-1 leading-relaxed">
           Thank you so much for helping us create a cozy and healthy space as we celebrate together.
         </p>
+
+        <p class="description pl-1 leading-relaxed">
+          <a href="https://partiful.com/e/wIxHBdrFI9BIlOjIEWVT" target="_blank" rel="noopener" class="hover:text-slate-900 font-medium hover:underline">
+            RSVP here →
+          </a>
+        </p>
       </div>
     </section>
 
@@ -57,6 +63,11 @@ const { language } = useLanguage()
         </ul>
         <p class="description pl-1 leading-relaxed">
           Muchas gracias por ayudarnos a crear un espacio acogedor y saludable mientras celebramos juntos.
+        </p>
+        <p class="description pl-1 leading-relaxed">
+          <a href="https://partiful.com/e/wIxHBdrFI9BIlOjIEWVT" target="_blank" rel="noopener" class="hover:text-slate-900 font-medium hover:underline">
+            Confirma tu asistencia aquí o mándanos un mensaje →
+          </a>
         </p>
       </div>
     </section>
