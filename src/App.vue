@@ -19,9 +19,16 @@ const linkStyle = { flexBasis: `${100 / navLinks.length}%` }
     <aside class="hidden lg:flex lg:flex-col lg:w-2/5 lg:fixed lg:left-0 lg:top-0 lg:h-screen overflow-hidden">
       <div class="flex-1 min-h-0 overflow-hidden">
         <img
+          v-if="language === 'en'"
           class="w-full h-full object-cover"
           alt="Baby Shower Photo"
           src="@/assets/baby-shower.png"
+        />
+        <img
+          v-else
+          class="w-full h-full object-cover"
+          alt="Baby Shower Photo"
+          src="@/assets/baby-shower-es.png"
         />
       </div>
       <footer class="shrink-0 px-4 py-8 text-center">
@@ -43,18 +50,19 @@ const linkStyle = { flexBasis: `${100 / navLinks.length}%` }
         </RouterLink>
 
         <!-- Language Toggle -->
-        <div class="flex items-center gap-1 text-sm px-4">
-          <button
-            @click="setLanguage('en')"
-            :class="language === 'en' ? 'font-semibold' : 'opacity-50'"
-            class="hover:opacity-100 transition-opacity"
-          >EN</button>
-          <span class="opacity-40">|</span>
-          <button
-            @click="setLanguage('es')"
-            :class="language === 'es' ? 'font-semibold' : 'opacity-50'"
-            class="hover:opacity-100 transition-opacity"
-          >ES</button>
+        <div class="flex items-center text-sm px-4">
+          <div class="inline-flex rounded-full border border-[#87a878] overflow-hidden">
+            <button
+              @click="setLanguage('en')"
+              :class="language === 'en' ? 'bg-[#87a878] text-white' : 'text-[#87a878] hover:bg-[#87a878]/10'"
+              class="px-3 py-1 text-xs font-medium transition-colors"
+            >EN</button>
+            <button
+              @click="setLanguage('es')"
+              :class="language === 'es' ? 'bg-[#87a878] text-white' : 'text-[#87a878] hover:bg-[#87a878]/10'"
+              class="px-3 py-1 text-xs font-medium transition-colors"
+            >ES</button>
+          </div>
         </div>
       </nav>
 

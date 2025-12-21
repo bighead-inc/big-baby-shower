@@ -8,9 +8,16 @@ const { language } = useLanguage()
   <div class="home">
     <!-- Mobile image (hidden on desktop) -->
     <img
+      v-if="language === 'en'"
       class="lg:hidden rounded mb-8 w-full"
       alt="Baby Shower Photo"
       src="@/assets/baby-shower.png"
+    />
+    <img
+      v-else
+      class="lg:hidden rounded mb-8 w-full"
+      alt="Baby Shower Photo"
+      src="@/assets/baby-shower-es.png"
     />
 
     <!-- English Event Details -->
