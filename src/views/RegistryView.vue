@@ -57,7 +57,7 @@ const { language } = useLanguage()
           </a>
         </li>
         <li>
-          <a href="[BABYLIST REGISTRY LINK]" target="_blank" rel="noopener" class="hover:text-slate-900 font-medium hover:underline">
+          <a href="https://my.babylist.com/rios_baby" target="_blank" rel="noopener" class="hover:text-slate-900 font-medium hover:underline">
             Babylist Registry →
           </a>
         </li>

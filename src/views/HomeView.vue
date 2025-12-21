@@ -45,17 +45,18 @@ const { language } = useLanguage()
     <!-- Spanish Event Details -->
     <section v-else class="mb-10">
       <div class="info-item space-y-5">
-        <h1 class="accent text-2xl/8">¡Vengan a celebrar con nosotros a nuestro invitadito especial que viene en camino!</h1>
-        <p class="description pl-1 leading-relaxed">Hemos estado siendo muy juiciosos para mantenernos sanos, así que les agradeceríamos mucho su ayuda para que todo esté seguro para el bebé y para Loren Michelle.</p>
+        <h1 class="accent text-2xl/8">¡Vengan a celebrar con nosotros a nuestro invitadito especial!</h1>
+        <p class="description pl-1 leading-relaxed">¡Hemos recibido tanto amor de todos, y el bebé también lo está sintiendo!</p>
+        <p class="description pl-1 leading-relaxed">Estamos muy emocionados de celebrar con ustedes, y les pedimos que nos ayuden a hacer de este un evento seguro para que podamos llegar a la meta lo más saludables posible.</p>
         <p class="description pl-1 leading-relaxed">
-          Estas son unas cositas que significan mucho para nosotros:
+          Algunas cosas que significarían mucho para nosotros:
         </p>
         <ul class="list-disc list-inside space-y-3 leading-relaxed">
-          <li>Les recomendamos, si pueden, ponerse la vacuna de la gripa y la de COVID (nosotros estamos vacunados y al día).</li>
-          <li>Si se sienten medio enfermados —con tos, estornudos, o si ven que algo les está empezando— les pedimos con cariño que nos manden su amor desde la casa.</li>
+          <li>Si no se sienten bien — aunque sea algo leve — les pedimos con cariño que se queden en casa y nos envíen su amor desde lejos. Su comprensión significa mucho para nosotros.</li>
+          <li>Teniendo en cuenta la temporada de gripe y resfriados, las vacunas de gripe y COVID de este año son muy recomendadas, aunque no obligatorias.</li>
         </ul>
         <p class="description pl-1 leading-relaxed">
-          Mil gracias por ayudarnos a crear un espacio bien bonito y saludable mientras celebramos juntos.
+          Muchas gracias por ayudarnos a crear un espacio acogedor y saludable mientras celebramos juntos.
         </p>
       </div>
     </section>
