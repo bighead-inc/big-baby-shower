@@ -1,16 +1,29 @@
 <script setup>
+import { computed } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import { routes } from '@/router'
 import { useLanguage } from '@/composables/useLanguage'
 
 const { language, setLanguage } = useLanguage()
 
-const navLinks = routes.map(route => ({
-  to: route.path,
-  label: route.meta?.navLabel ?? route.name.charAt(0).toUpperCase() + route.name.slice(1),
-}))
+const navLabels = {
+  en: { home: 'Home', registry: 'Registry', faq: 'FAQ' },
+  es: { home: 'Inicio', registry: 'Registro', faq: 'Preguntas' },
+}
 
-const linkStyle = { flexBasis: `${100 / navLinks.length}%` }
+const footerText = {
+  en: 'built with love by loren & hector',
+  es: 'hecho con amor por loren & hector',
+}
+
+const navLinks = computed(() =>
+  routes.map(route => ({
+    to: route.path,
+    label: navLabels[language.value][route.name] || route.name,
+  }))
+)
+
+const linkStyle = { flexBasis: `${100 / routes.length}%` }
 </script>
 
 <template>
@@ -32,7 +45,7 @@ const linkStyle = { flexBasis: `${100 / navLinks.length}%` }
         />
       </div>
       <footer class="shrink-0 px-4 py-8 text-center">
-        <p class="text-xs text-gray-500">built with love by loren & hector</p>
+        <p class="text-xs text-gray-500">{{ footerText[language] }}</p>
       </footer>
     </aside>
 
@@ -72,7 +85,7 @@ const linkStyle = { flexBasis: `${100 / navLinks.length}%` }
 
       <!-- Mobile footer (hidden on desktop) -->
       <footer class="lg:hidden px-4 py-8 text-center mt-auto">
-        <p class="text-xs text-gray-500">built with love by loren & hector</p>
+        <p class="text-xs text-gray-500">{{ footerText[language] }}</p>
       </footer>
     </main>
   </div>
