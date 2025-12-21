@@ -1,6 +1,9 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import { routes } from '@/router'
+import { useLanguage } from '@/composables/useLanguage'
+
+const { language, setLanguage } = useLanguage()
 
 const navLinks = routes.map(route => ({
   to: route.path,
@@ -28,7 +31,7 @@ const linkStyle = { flexBasis: `${100 / navLinks.length}%` }
 
     <!-- Right: Nav + Content (scrollable) -->
     <main class="main-content flex flex-col min-h-screen lg:w-3/5 lg:overflow-y-auto lg:h-screen lg:min-h-0">
-      <nav class="flex flex-row justify-center py-4">
+      <nav class="flex flex-row items-center justify-center py-4">
         <RouterLink
           v-for="link in navLinks"
           :key="link.to"
@@ -38,9 +41,24 @@ const linkStyle = { flexBasis: `${100 / navLinks.length}%` }
         >
           {{ link.label }}
         </RouterLink>
+
+        <!-- Language Toggle -->
+        <div class="flex items-center gap-1 text-sm px-4">
+          <button
+            @click="setLanguage('en')"
+            :class="language === 'en' ? 'font-semibold' : 'opacity-50'"
+            class="hover:opacity-100 transition-opacity"
+          >EN</button>
+          <span class="opacity-40">|</span>
+          <button
+            @click="setLanguage('es')"
+            :class="language === 'es' ? 'font-semibold' : 'opacity-50'"
+            class="hover:opacity-100 transition-opacity"
+          >ES</button>
+        </div>
       </nav>
 
-      <div class="container mx-auto px-4 py-8 flex-1">
+      <div class="container mx-auto px-6 sm:px-8 lg:px-12 py-8 flex-1">
         <RouterView />
       </div>
 

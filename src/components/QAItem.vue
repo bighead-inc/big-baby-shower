@@ -12,9 +12,9 @@ defineProps({
 </script>
 
 <template>
-  <div class="qa-item">
-    <h1 class="accent text-2xl/10">{{ question }}</h1>
-    <p class="answer pl-1">{{ answer }}</p>
+  <div class="qa-item mb-8">
+    <h1 class="accent text-2xl/8 mb-3">{{ question }}</h1>
+    <p class="answer pl-1 leading-relaxed">{{ answer }}</p>
   </div>
 </template>
 
