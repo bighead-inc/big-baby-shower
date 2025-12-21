@@ -24,15 +24,17 @@ const { language } = useLanguage()
     <section v-if="language === 'en'" class="mb-10">
       <div class="info-item space-y-5">
         <h1 class="accent text-2xl/8">Come and celebrate our tiny guest with us!</h1>
-        <p class="description pl-1 leading-relaxed">We've been extra careful about staying healthy, so we'd
-        appreciate your help keeping things safe for baby and Loren.</p>
+        <p class="description pl-1 leading-relaxed">We've received so much love from everyone, and
+        baby is feeling it as well!</p>
+        <p class="description pl-1 leading-relaxed">We're so excited to celebrate with you, and we
+        are asking that you help us make this a safe event so that we can get to the finish line as
+        healthy as possible.</p>
         <p class="description pl-1 leading-relaxed">
           A few things that would mean a lot to us:
         </p>
         <ul class="list-disc list-inside space-y-3 leading-relaxed">
-          <li>Getting the Flu and Covid vaccines (strongly encouraged)</li>
-          <li>If you're feeling under the weather -- coughing, sneezing, indigestion or just sensing
-          something coming on -- we kindly ask that you send us your love from home instead.</li>
+          <li>If you’re not feeling well — even mildly — we kindly ask that you stay home and send your love from afar. Your understanding means a lot to us.</li>
+          <li>With cold and flu season in mind, this year’s flu and COVID vaccines are strongly encouraged, though not required.</li>
         </ul>
         <p class="description pl-1 leading-relaxed">
           Thank you so much for helping us create a cozy and healthy space as we celebrate together.
