@@ -4,6 +4,12 @@
 @source "../**/*.js";
 @import './base.css';
 
+@layer base {
+  html {
+    background-color: #fffdfc;
+  }
+}
+
 a,
 .accent {
   text-decoration: none;
