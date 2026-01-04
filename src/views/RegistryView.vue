@@ -19,7 +19,7 @@ const { language } = useLanguage()
         If you prefer, we're more than happy to accept monetary gifts to help with daycare. We truly appreciate your generosity.
       </p>
       <p class="pl-1 leading-relaxed">
-        And no clothes, please — we're all set! Thanks!
+        And no clothes or toys, please — we're all set! Thanks!
       </p>
       <ul class="pl-1 space-y-3 mt-4 list-disc list-inside">
         <li>
@@ -48,7 +48,7 @@ const { language } = useLanguage()
         Si lo prefieren, con mucho gusto aceptamos aportes en dinero para ayudarnos con la guardería. Agradecemos enormemente su generosidad.
       </p>
       <p class="pl-1 leading-relaxed">
-        Y por favor, nada de ropa — ¡ya tenemos suficiente, muchas gracias!
+        Y por favor, nada de ropa o juguetes — ¡ya tenemos suficiente, muchas gracias!
       </p>
       <ul class="pl-1 space-y-3 mt-4 list-disc list-inside">
         <li>
