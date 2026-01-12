@@ -7,8 +7,8 @@ import { useLanguage } from '@/composables/useLanguage'
 const { language, setLanguage } = useLanguage()
 
 const navLabels = {
-  en: { home: 'Home', registry: 'Registry', faq: 'FAQ' },
-  es: { home: 'Inicio', registry: 'Registro', faq: 'Preguntas' },
+  en: { home: 'Home', registry: 'Registry', schedule: 'Schedule', faq: 'FAQ' },
+  es: { home: 'Inicio', registry: 'Registro', schedule: 'Horario', faq: 'Preguntas' },
 }
 
 const footerText = {
